@@ -1,9 +1,8 @@
-#!/usr/bin/env runhaskell
 import Data.Char
 import Data.List
 import Data.Maybe
 
-q = zip("hel word")(map(e(5))[32641183,22730431,17318431,4242,3381026947,33080895,27432127,4539967])
+q = zip("hel word")(map(e(5))[32641183,22730431,17318431,42,3381026947,33080895,27432127,4539967])
 w = fst$q!!3
 e k = unfoldr(listToMaybe.t(k))
 r k x = x++replicate(k-length(x))(w)
